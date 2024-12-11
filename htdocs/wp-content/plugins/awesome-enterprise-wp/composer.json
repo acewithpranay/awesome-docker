@@ -1,0 +1,20 @@
+{ 
+	"name": "wpoets/awesome-enterprise-wp",
+    "license": "GPL-3.0-or-later",
+    "type": "wordpress-plugin",
+    "description": "This is the WordPress plugin to enable code editing for Awesome Enterprise Platform and enable low code flow within WordPress framework.",
+	"keywords": ["WordPress", "Low Code"," Awesome Enterprise","Shortcode"],
+	"homepage": "https://getawesomestudio.com/",
+	"authors": [
+		{
+            "name": "WPoets Team",
+            "homepage": "https://www.wpoets.com"
+        }
+    ],
+	 "support": {
+        "docs": "https://www.getawesomestudio.com/enterprise-tutorial/"
+    },
+    "require": {
+        "yahnis-elsts/plugin-update-checker": "^4.10"
+    }
+}
