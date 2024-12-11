@@ -1,0 +1,32 @@
+{
+    "name": "wpoets/debug-handler",
+    "license": "GPL-3.0-or-later",
+    "type": "awesome-handler",
+    "description": "Add support for php-debugbar to make it easier for debugging within awesome enterprise",
+	"keywords": ["WordPress", "Low Code"," Awesome Enterprise","Shortcode","debugbar"],
+	"homepage": "https://getawesomestudio.com/",
+	"authors": [
+		{
+            "name": "WPoets Team",
+            "homepage": "https://www.wpoets.com"
+        }
+       
+    ],
+	 "support": {
+        "docs": "https://www.getawesomestudio.com/enterprise-tutorial/"
+    },
+    "require": {
+        "php": ">=7.0",
+        "maximebf/debugbar": "1.*",
+        "composer/installers": "~1.0",
+        "oomphinc/composer-installers-extender": "^2.0"
+    },
+	 "extra": { 
+		"installer-name": "debug"
+    },
+    "config": {
+		"process-timeout": 600,
+        "sort-packages": true
+    },
+	"prefer-stable": true
+}

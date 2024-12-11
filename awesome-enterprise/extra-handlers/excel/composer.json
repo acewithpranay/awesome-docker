@@ -1,0 +1,34 @@
+{
+    "name": "wpoets/excel-handler",
+    "license": "GPL-3.0-or-later",
+    "type": "awesome-handler",
+    "description": "Add support for creating and working with excel file within awesome enterprise",
+	"keywords": ["WordPress", "Low Code"," Awesome Enterprise","Shortcode","PHP excel"],
+	"homepage": "https://getawesomestudio.com/",
+	"authors": [
+		{
+            "name": "WPoets Team",
+            "homepage": "https://www.wpoets.com"
+        }
+       
+    ],
+	 "support": {
+        "docs": "https://www.getawesomestudio.com/enterprise-tutorial/"
+    },
+    "require": {
+        "php": ">=7.0",
+        "composer/installers": "~1.0",
+        "oomphinc/composer-installers-extender": "^2.0",
+        "phpoffice/phpspreadsheet": "^1.15"
+    },
+	 "extra": { 
+		"installer-name": "excel"
+    },
+    "config": {
+		"process-timeout": 600,
+        "sort-packages": true
+    },
+	"prefer-stable": true,
+    "require-dev": {
+    }
+}

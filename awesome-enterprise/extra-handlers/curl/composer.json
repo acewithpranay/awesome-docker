@@ -1,0 +1,31 @@
+{
+    "name": "wpoets/curl-handler",
+    "license": "GPL-3.0-or-later",
+    "type": "awesome-handler",
+    "description": "Handler for sending curl request in Awesome Enterprise",
+	"keywords": ["WordPress", "Low Code"," Awesome Enterprise","Shortcode","Curl"],
+	"homepage": "https://awxdocs.com/",
+	"authors": [
+		{
+            "name": "WPoets Team",
+            "homepage": "https://www.wpoets.com"
+        }
+       
+    ],
+	 "support": {
+        "docs": "https://www.awxdocs.com/tutorials/"
+    },
+    "require": {
+        "php": ">=7.4",
+        "composer/installers": "~1.0",
+        "oomphinc/composer-installers-extender": "^2.0"
+    },
+	 "extra": { 
+		"installer-name": "curl"
+    },
+    "config": {
+		"process-timeout": 600,
+        "sort-packages": true
+    },
+	"prefer-stable": true
+}

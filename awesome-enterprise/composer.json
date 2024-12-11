@@ -1,0 +1,68 @@
+{
+    "name": "wpoets/awesome-enterprise",
+    "license": "GPL-3.0-or-later",
+    "type": "project",
+    "description": "The Awesome Enterprise Framework for low code development in PHP",
+	"keywords": ["WordPress", "Low Code"," Awesome Enterprise","Shortcode"],
+	"homepage": "https://getawesomestudio.com/",
+	"authors": [
+         {
+            "name": "Vikas Kumar",
+            "homepage": "https://www.wpoets.com"
+        },
+		{
+            "name": "Amit Singh",
+            "homepage": "https://www.wpoets.com"
+        }
+       
+    ],
+	 "support": {
+        "docs": "https://www.getawesomestudio.com/enterprise-tutorial/"
+    },
+	"repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/WPoets/Simple-MySQLi"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "clue/buzz-react": "^2.9",
+        "ezyang/htmlpurifier": "^4.13",
+        "google/apiclient": "^2.16",
+        "hashids/hashids": "^4.0",
+        "matthiasmullie/minify": "^1.3",
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "wikimedia/less.php": "4.1.1",
+        "wpoets/communication-handler": "1.0.5.1",
+        "wpoets/curl-handler": "^1.0",
+        "wpoets/debug-handler": ">=1.0",
+        "wpoets/excel-handler": "^1.0",
+        "wpoets/google-handler": "^1.0",
+        "wpoets/jwt-handler": "^1.2",
+        "wpoets/pdf-handler": "^1.0",
+        "wpoets/simple-mysqli": ">=1.5.6"
+    },
+	"extra": {
+        "installer-types": ["awesome-handler"],
+        "installer-paths": {
+            "extra-handlers/{$name}/": ["type:awesome-handler"]
+        }
+    },
+    "config": {
+		"process-timeout": 600,
+        "sort-packages": true
+    },
+	 "suggest": {
+        "wpoets/communication-handler": "Email, SMS and Push notification API Integration handler for Awesome enterprise",
+        "wpoets/docx-handler": "Add support for parsing docx file by introducing docx.parse_template shortcode",
+        "wpoets/facebook-handler": "Facebook API Integration handler for Awesome enterprise",
+        "wpoets/google-handler": "Google API Integration handler for Awesome enterprise",
+        "wpoets/linkedin-handler": "LinkedIn API Integration handler for Awesome enterprise",
+        "wpoets/payments-handler": "Adds support for payment gateway integrations by introducing aw2.pay shortcode",
+        "wpoets/pdf-handler": "Handler for PDF creation and parsing in Awesome Enterprise",
+        "wpoets/woocommerce-handler": "Handler for working with WooCommerce products in Awesome Enterprise",
+        "wpoets/exotel-handler": "Adds support to work with Exotel API within Awesome Enterprise, introduces exotel.* shortcodes"
+    },
+	"prefer-stable": true
+}
