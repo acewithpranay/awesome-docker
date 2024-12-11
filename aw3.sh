@@ -77,6 +77,3 @@ if ! wo site info $SITE > /dev/null 2>&1; then
     echo -e "${YELLOW}Site $SITE does not exist!${NC}"
     exit 1
 fi
-
-cd /var/www/$SITE/htdocs
-installAw2
