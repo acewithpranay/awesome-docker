@@ -26,8 +26,11 @@ function installAw2(){
 
     # Awesome-Enterprise Path and URLs
     wp config set AWESOME_PATH /var/www/awesome-enterprise --add=true --type=constant --allow-root
-    wp config set SITE_URL "${SITE_URL}" --add=true --type=constant --allow-root
-    wp config set HOME_URL "${HOME_URL}" --add=true --type=constant --allow-root
+    wp config set CONNECTIONS "array('cdn_code'=> array('connection_service'=>'url_conn', 'url'=>'https://cdn.getawesomestudio.com/code', 'redis_db'=>1, 'cache_expiry'=>300))" --raw --add --type=constant --allow-root
+    wp config set DB_CONNECTIONS "array('primary_db'=> array('host'=>DB_HOST, 'user'=>DB_USER, 'password'=>DB_PASSWORD))" --raw --add --type=constant --allow-root
+    wp config set MYSQLI_CONNECTION "primary_db" --add --type=constant --allow-root
+    wp config set SITE_URL "(\$_SERVER['HTTPS'] ? 'https://' : 'http://') . \$_SERVER['HTTP_HOST']" --raw --add=true --type=constant --allow-root
+    wp config set HOME_URL "(\$_SERVER['HTTPS'] ? 'https://' : 'http://') . \$_SERVER['HTTP_HOST']" --raw --add=true --type=constant --allow-root
 
     # Post revisions
     wp config set WP_POST_REVISIONS ${WP_POST_REVISIONS:-100} --allow-root
