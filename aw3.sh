@@ -25,8 +25,9 @@ function installAw2(){
     wp config set REDIS_PORT ${REDIS_PORT:-6379} --add=true --type=constant --allow-root
 
     # Awesome-Enterprise Path and URLs
+    wp config set LOG_PATH /var/www/cars24dev.wordpoets.com/htdocs/wp-content/uploads/log --add=true --type=constant --allow-root
     wp config set AWESOME_PATH /var/www/awesome-enterprise --add=true --type=constant --allow-root
-    wp config set CONNECTIONS "array('cdn_code'=> array('connection_service'=>'url_conn', 'url'=>'https://cdn.getawesomestudio.com/code', 'redis_db'=>1, 'cache_expiry'=>300))" --raw --add --type=constant --allow-root
+    wp config set CONNECTIONS "array('cdn_code'=> array('connection_service'=>'url_conn', 'url'=>'https://cdn.getawesomestudio.com/code', 'redis_db'=>1, 'cache_expiry'=>30000))" --raw --add --type=constant --allow-root
     wp config set DB_CONNECTIONS "array('primary_db'=> array('host'=>DB_HOST, 'user'=>DB_USER, 'password'=>DB_PASSWORD))" --raw --add --type=constant --allow-root
     wp config set MYSQLI_CONNECTION "primary_db" --add --type=constant --allow-root
     wp config set SITE_URL "(\$_SERVER['HTTPS'] ? 'https://' : 'http://') . \$_SERVER['HTTP_HOST']" --raw --add=true --type=constant --allow-root
