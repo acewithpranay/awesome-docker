@@ -91,15 +91,7 @@ if ( ! defined( 'WP_DEBUG' ) ) {
 	define( 'WP_DEBUG', false );
 }
 
-define('FORCE_SSL_ADMIN', true);
-// in some setups HTTP_X_FORWARDED_PROTO might contain
-// a comma-separated list e.g. http,https
-// so check for https existence
-if ( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && strpos( $_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false ) {
-   $_SERVER['HTTPS'] = 'on';
-}
-
-define( 'WP_REDIS_PREFIX', 'cars24.wordpoets.com:' );
+define( 'WP_REDIS_PREFIX', 'stage-blog-service-au.qac24svc.dev:' );
 define( 'WP_MEMORY_LIMIT', '512M' );
 define( 'WP_MAX_MEMORY_LIMIT', '512M' );
 define( 'CONCATENATE_SCRIPTS', false );
@@ -112,7 +104,7 @@ define( 'REDIS_DATABASE_GLOBAL_CACHE', '11' );
 define( 'REDIS_DATABASE_SESSION_CACHE', '12' );
 define( 'REDIS_HOST', '127.0.0.1' );
 define( 'REDIS_PORT', '6379' );
-define( 'LOG_PATH', '/var/www/cars24.wordpoets.com/htdocs/wp-content/uploads/log' );
+define( 'LOG_PATH', '/var/www/stage-blog-service-au.qac24svc.dev/htdocs/wp-content/uploads/log' );
 define( 'AWESOME_PATH', '/var/www/awesome-enterprise' );
 define( 'SITE_URL', ($_SERVER['HTTPS'] ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] );
 define( 'HOME_URL', ($_SERVER['HTTPS'] ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] );
