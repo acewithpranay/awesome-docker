@@ -21,13 +21,13 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'cars24_wordpoets_com_V0LcuRwo' );
+define( 'DB_NAME', 'db-name' );
 
 /** Database username */
-define( 'DB_USER', 'cars24wordpoX251' );
+define( 'DB_USER', 'db-user' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'chpxi8VlNSJu613YHCIGsmyZ' );
+define( 'DB_PASSWORD', 'any-pass' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
@@ -91,7 +91,7 @@ if ( ! defined( 'WP_DEBUG' ) ) {
 	define( 'WP_DEBUG', false );
 }
 
-define( 'WP_REDIS_PREFIX', 'stage-blog-service-au.qac24svc.dev:' );
+define( 'WP_REDIS_PREFIX', 'example.com:' );
 define( 'WP_MEMORY_LIMIT', '512M' );
 define( 'WP_MAX_MEMORY_LIMIT', '512M' );
 define( 'CONCATENATE_SCRIPTS', false );
@@ -104,7 +104,7 @@ define( 'REDIS_DATABASE_GLOBAL_CACHE', '11' );
 define( 'REDIS_DATABASE_SESSION_CACHE', '12' );
 define( 'REDIS_HOST', '127.0.0.1' );
 define( 'REDIS_PORT', '6379' );
-define( 'LOG_PATH', '/var/www/stage-blog-service-au.qac24svc.dev/htdocs/wp-content/uploads/log' );
+define( 'LOG_PATH', '/var/www/example.com/htdocs/wp-content/uploads/log' );
 define( 'AWESOME_PATH', '/var/www/awesome-enterprise' );
 define( 'SITE_URL', ($_SERVER['HTTPS'] ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] );
 define( 'HOME_URL', ($_SERVER['HTTPS'] ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] );
