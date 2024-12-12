@@ -19,3 +19,4 @@ server {
     include common/wpcommon-php82.conf;
     include common/locations-wo.conf;
     include /var/www/cars24.wordpoets.com/conf/nginx/*.conf;
+}
